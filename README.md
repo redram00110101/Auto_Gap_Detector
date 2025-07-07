@@ -60,20 +60,35 @@ A Chrome extension that automatically detects content gaps in Wikipedia articles
 
 \`\`\`
 Auto Gap Detector/
+
 ├── manifest.json         # Extension configuration
+
 ├── background.js         # Background service worker
+
 ├── content.js            # Main content script
+
 ├── popup.html            # Extension popup interface
+
 ├── popup.js              # Popup functionality
+
 ├── popup.css             # Popup styles
+
 ├── repository.html       # Repository dashboard
+
 ├── repository.js         # Repository functionality
+
 ├── repository.css        # Repository styles
+
 ├── styles.css            # Content script styles
+
 ├── icons/                # Extension icons
+
 │   ├── icon16.png
+
 │   ├── icon48.png
+
 │   └── icon128.png
+
 └── README.md             # This file
 \`\`\`
 
