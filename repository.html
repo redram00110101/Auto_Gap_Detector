@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap Detection Repository</title>
+    <link rel="stylesheet" href="repository.css">
+</head>
+<body>
+    <div class="repository-container">
+        <header class="repository-header">
+            <h1>📊 Gap Detection Repository</h1>
+            <p>Comprehensive overview of detected content gaps in Zambian Wikipedia articles</p>
+        </header>
+        
+        <div class="dashboard">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Gaps</h3>
+                    <span class="stat-value" id="total-gaps">0</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Pages Analyzed</h3>
+                    <span class="stat-value" id="pages-analyzed">0</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Score</h3>
+                    <span class="stat-value" id="avg-score">0%</span>
+                </div>
+                <div class="stat-card">
+                    <h3>High Priority</h3>
+                    <span class="stat-value" id="high-priority">0</span>
+                </div>
+            </div>
+            
+            <div class="filters">
+                <select id="filter-type">
+                    <option value="all">All Types</option>
+                    <option value="university">Universities</option>
+                    <option value="municipalCouncil">Municipal Councils</option>
+                </select>
+                <select id="filter-severity">
+                    <option value="all">All Severities</option>
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+                <button id="export-data" class="export-btn">Export Data</button>
+            </div>
+        </div>
+        
+        <div class="gaps-table">
+            <h2>Detected Gaps</h2>
+            <table id="gaps-table">
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Score</th>
+                        <th>Gaps</th>
+                        <th>Last Analyzed</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="gaps-tbody">
+                    <tr>
+                        <td colspan="5" class="no-data">No gaps detected yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="gap-details" id="gap-details" style="display: none;">
+            <h3>Gap Details</h3>
+            <div id="gap-details-content"></div>
+        </div>
+    </div>
+    
+    <script src="repository.js"></script>
+</body>
+</html>

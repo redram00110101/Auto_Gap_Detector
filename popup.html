@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Gap Detector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <h1>🔍 Auto Gap Detector</h1>
+            <p>Enhancing Wikipedia coverage of Zambian institutions</p>
+        </header>
+        
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number" id="total-gaps">0</span>
+                <span class="stat-label">Total Gaps Found</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="pages-analyzed">0</span>
+                <span class="stat-label">Pages Analyzed</span>
+            </div>
+        </div>
+        
+        <div class="recent-gaps">
+            <h3>Recent Gaps Detected</h3>
+            <ul id="recent-gaps-list">
+                <li class="no-gaps">No gaps detected yet. Visit Wikipedia pages to start analyzing!</li>
+            </ul>
+        </div>
+        
+        <div class="actions-section">
+            <button id="analyze-current" class="action-btn primary">
+                Analyze Current Page
+            </button>
+            <button id="view-repository" class="action-btn secondary">
+                View Repository
+            </button>
+        </div>
+        
+        <div class="settings-section">
+            <h3>Settings</h3>
+            <label class="setting-item">
+                <input type="checkbox" id="auto-analyze" checked>
+                <span>Auto-analyze pages</span>
+            </label>
+            <label class="setting-item">
+                <input type="checkbox" id="show-tooltips" checked>
+                <span>Show tooltips</span>
+            </label>
+            <label class="setting-item">
+                <input type="checkbox" id="focus-zambia" checked>
+                <span>Focus on Zambian content</span>
+            </label>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
