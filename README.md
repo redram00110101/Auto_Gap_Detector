@@ -1,4 +1,4 @@
- `# Auto Gap Detector - Chrome Extension
+# Auto Gap Detector - Chrome Extension
 
 A Chrome extension that automatically detects content gaps in Wikipedia articles about Zambian universities and municipal councils.
 
